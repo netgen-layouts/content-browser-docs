@@ -28,7 +28,7 @@ structure as this will break the content browser dialog.
         </div>
 
         <input type="hidden" class="js-config-name" value="MY_ITEM_TYPE" />
-        <input type="hidden" class="js-value" id="VALUE_ID" value="" />
+        <input type="hidden" class="js-value" id="CSS_ID" value="" />
     </div>
 
 Calling the Content Browser from your Twig template
@@ -43,7 +43,6 @@ via an ``include`` tag:
         with {
             input_id: 'my-location',
             item_type: 'ezlocation',
-            value: 42,
             item_name: 'My item',
             no_item_message: 'No item selected',
             required: false,
@@ -76,16 +75,9 @@ Required parameters
 Optional parameters
 ^^^^^^^^^^^^^^^^^^^
 
-* ``value``
-
-    Provides the value to content browser dialog if you already have one
-
-    **type**: ``string``
-
 * ``item_name``
 
-    Item name to render when value is present. If undefined, will fallback to
-    the value itself
+    Item name to render when you already have a value.
 
     **type**: ``string``
 
