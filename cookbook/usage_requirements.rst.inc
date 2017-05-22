@@ -15,3 +15,14 @@ or just include the provided Twig template:
 .. code-block:: jinja
 
     {% include 'NetgenContentBrowserBundle::page_head.html.twig' %}
+
+All HTML code blocks which have ``js-input-browse`` CSS class will be automatically initialized
+on document ready with jQuery and the plugin which are included in ``netgen-content-browser.js``.
+
+If you use another CSS class, or if you add content browser HTML code via AJAX to your page,
+you will need to manually initialize the plugin on those elements:
+
+.. code-block:: javascript
+
+    // ngc_jquery variable holds jQuery included with Netgen Content Browser
+    ngc_jquery('.js-input-browse').input_browse();
