@@ -13,12 +13,28 @@ Use the following piece of HTML code to call the Content Browser, and replace
 the relevant pieces of data to suit your needs (item type, CSS ID for the value
 input and ``data-`` attributes).
 
+.. note::
+
+    ``data-`` attributes are all optional.
+
 Take care not to remove or change any other predefined CSS classes or HTML
-structure as this will break the content browser dialog.
+structure as this will break the Content Browser dialog.
+
+After you select some items and close the Content Browser dialog, selected value
+will be available in a hidden input with a ``js-value`` CSS class.
+
+.. tip::
+
+    To help you reach the selected value, you can attach custom CSS ID to hidden
+    input where value is stored, as shown below.
 
 .. code-block:: html
 
-    <div class="js-input-browse item-empty" data-min_selected="1" data-max_selected="1">
+    <div class="js-input-browse item-empty"
+        data-min_selected="1"
+        data-max_selected="1"
+        data-start_location="42"
+    >
         <div class="input-browse">
             <span class="js-clear"><i class="material-icons">close</i></span>
 
@@ -48,6 +64,7 @@ via an ``include`` tag:
             required: false,
             min: 2,
             max: 3,
+            start_location: 42,
             show_tree: true,
             show_search: false,
             show_preview: true
@@ -102,6 +119,12 @@ Optional parameters
 * ``max``
 
     Maximum number of items to select, defaults to configuration if undefined
+
+    **type**: ``int``
+
+* ``start_location``
+
+    This option defines in which location the Content Browser will start.
 
     **type**: ``int``
 

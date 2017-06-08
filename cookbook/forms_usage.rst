@@ -30,6 +30,12 @@ Available options
 
     **type**: ``string``, **required**: Yes
 
+* ``start_location``
+
+    This option defines in which location the Content Browser will start.
+
+    **type**: ``int``, **required**: No, **default value**: ``null``
+
 Other options
 ^^^^^^^^^^^^^
 
@@ -70,6 +76,12 @@ Available options
 
     **type**: ``int``, **required**: No, **default value**: ``null``
 
+* ``start_location``
+
+    This option defines in which location the Content Browser will start.
+
+    **type**: ``int``, **required**: No, **default value**: ``null``
+
 Other options
 ^^^^^^^^^^^^^
 
@@ -100,3 +112,9 @@ Available options
     This option defines which item types will be available to select from
 
     **type**: ``array`` of ``string`` values, **required**: Yes
+
+* ``start_location``
+
+    This option defines in which location the Content Browser will start.
+
+    **type**: ``int``, **required**: No, **default value**: ``null``
