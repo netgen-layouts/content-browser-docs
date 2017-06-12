@@ -85,7 +85,7 @@ This configuration can be overriden when calling the dialog.
 
 Specifies the template that will be used to render the preview panel.
 
-**type**: ``string``, **required**: Yes, **example**: ``AppBundle:ngcb:my_item_type.html.twig``
+**type**: ``string``, **required**: Yes, **example**: ``@App/ngcb/my_item_type.html.twig``
 
 ``columns``
 ~~~~~~~~~~~
@@ -108,7 +108,7 @@ placeholder here, which will be translated with ``ngcb`` catalog.
 
 Specifies the template that will be used to render the cell in the column.
 
-**type**: ``string``, **required**: No, **example**: ``AppBundle:ngcb/my_item_type:some_column.html.twig``
+**type**: ``string``, **required**: No, **example**: ``@App/ngcb/my_item_type/some_column.html.twig``
 
 ``value_provider``
 ^^^^^^^^^^^^^^^^^^

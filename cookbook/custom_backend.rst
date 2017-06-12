@@ -48,7 +48,7 @@ used to render the item preview and a list of columns:
         my_item_type:
             name: item_types.my_item_type # Will be translated with "ngcb" catalog
             preview:
-                template: 'AppBundle:ngcb:my_item_type.html.twig'
+                template: '@App/ngcb/my_item_type.html.twig'
             columns:
                 # At least a "name" column must exist
                 name:
@@ -138,7 +138,7 @@ configuration:
     netgen_content_browser:
         my_item_type:
             preview:
-                template: 'AppBundle:ngcb:my_item_type.html.twig'
+                template: '@App/ngcb/my_item_type.html.twig'
 
 Creating this template is a simple task. The template receives the item in
 question in an ``item`` variable, which you can use to render the template.
@@ -206,7 +206,7 @@ column definition:
 	        columns:
 	            column_one:
 	                name: columns.my_item_type.column_one
-	                template: 'AppBundle:ngcb/my_item_type:column_one.html.twig'
+	                template: '@App/ngcb/my_item_type/column_one.html.twig'
 
 Just as with a preview template, creating this template is a simple task. Again,
 the template receives the item in question in an ``item`` variable, which you

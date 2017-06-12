@@ -18,14 +18,14 @@ with identifier ``my_item_type``:
                     enabled: false
                 preview:
                     enabled: true
-                    template: 'AppBundle:ngcb:my_item_type.html.twig'
+                    template: '@App/ngcb/my_item_type.html.twig'
                 columns:
                     name:
                         name: columns.name
                         value_provider: name
                     some_column:
                         name: columns.my_item_type.some_column
-                        template: 'AppBundle:ngcb/my_item_type:some_column.html.twig'
+                        template: '@App/ngcb/my_item_type/some_column.html.twig'
                     other_column:
                         name: columns.my_item_type.other_column
                         value_provider: my_item_type\other_column

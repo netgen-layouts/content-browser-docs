@@ -24,7 +24,7 @@ or in case of Twig template usage:
 
 .. code-block:: jinja
 
-    {% include 'NetgenContentBrowserBundle::content_browser.html.twig'
+    {% include '@NetgenContentBrowser/content_browser.html.twig'
         with {
             input_id: 'my-location',
             item_type: 'ezlocation',
@@ -50,7 +50,7 @@ or in case of Twig template usage:
 
 .. code-block:: jinja
 
-    {% include 'NetgenContentBrowserBundle::content_browser.html.twig'
+    {% include '@NetgenContentBrowser/content_browser.html.twig'
         with {
             input_id: 'my-location',
             item_type: 'ezlocation',

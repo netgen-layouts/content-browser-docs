@@ -14,7 +14,7 @@ The process involves adding a bit of configuration to enable the column:
                 my_column:
                     name: columns.ezlocation.my_column
                     # Either specify a template or a value provider identifier
-                    template: 'AppBundle:ngcb/ezlocation:my_column.html.twig'
+                    template: '@App/ngcb/ezlocation/my_column.html.twig'
                     # value_provider: ezlocation\my_column
 
 And then you need to either create a template that will render the cell of the

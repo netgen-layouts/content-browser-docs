@@ -19,10 +19,10 @@ For example, to add the preview for your custom content type with identifier
                 content_view:
                     ngcb_preview:
                         my_content_type:
-                            template: 'AppBundle:ngcb/preview:my_content_type.html.twig'
+                            template: '@App/ngcb/preview/my_content_type.html.twig'
                             match:
                                 Identifier\ContentType: my_content_type
 
-``AppBundle:ngcb/preview:my_content_type.html.twig`` is then a regular eZ Publish
+``@App/ngcb/preview/my_content_type.html.twig`` is then a regular eZ Publish
 content view template, meaning you have access to ``content`` and ``location``
 variables, which you can use to render what ever you wish.

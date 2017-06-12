@@ -62,7 +62,7 @@ via an ``include`` tag:
 
 .. code-block:: jinja
 
-    {% include 'NetgenContentBrowserBundle::content_browser.html.twig'
+    {% include '@NetgenContentBrowser/content_browser.html.twig'
         with {
             input_id: 'my-location',
             item_type: 'ezlocation',
