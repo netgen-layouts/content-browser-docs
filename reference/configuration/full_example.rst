@@ -10,7 +10,6 @@ with identifier ``my_item_type``:
         item_types:
             my_item_type:
                 name: item_types.my_item_type
-                sections: [2, 43, 5]
                 min_selected: 1
                 max_selected: 0
                 tree:

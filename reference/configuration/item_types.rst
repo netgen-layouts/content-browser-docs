@@ -14,17 +14,6 @@ placeholder here, which will be translated with ``ngcb`` catalog.
 
 **type**: ``string``, **required**: Yes, **example**: ``item_types.my_item_type``
 
-``sections``
-~~~~~~~~~~~~
-
-This configuration makes it possible to override tree sections which are
-displayed in the dropdown above the tree in the interface.
-
-Sections are separate trees that hold the items. For example, eZ Platform
-integration has three sections: Home, Media and Users.
-
-**type**: ``array``, **required**: No, **default**: ``[]``, **example**: ``[2, 43, 5]``
-
 ``min_selected``
 ~~~~~~~~~~~~~~~~
 
