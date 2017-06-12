@@ -13,15 +13,22 @@ Use the following piece of HTML code to call the Content Browser, and replace
 the relevant pieces of data to suit your needs (item type, CSS ID for the value
 input and ``data-`` attributes).
 
-.. note::
-
-    ``data-`` attributes are all optional.
+After you select some items and close the Content Browser dialog, selected value
+will be available in a hidden input with a ``js-value`` CSS class.
 
 Take care not to remove or change any other predefined CSS classes or HTML
 structure as this will break the Content Browser dialog.
 
-After you select some items and close the Content Browser dialog, selected value
-will be available in a hidden input with a ``js-value`` CSS class.
+``data-`` attributes are all optional. ``data-`` attributes modify the behaviour
+of the interface, like limiting the number of items which can be selected, or
+showing/hiding certain aspects of the interface. One special ``data-`` attribute
+is used to modify the behaviour of the backend, by transferring it to the
+backend via query parameters. Basically, every ``data-`` attribute which starts
+with ``data-custom-``, will be transferred to the backend so you can use it to
+modify the behaviour as you see fit. In the backend, you can inject the
+configuration object, as explained in
+:doc:`the list of available Symfony services </reference/symfony_services>`,
+which will then hold the list of all custom parameters.
 
 .. tip::
 
@@ -64,6 +71,7 @@ via an ``include`` tag:
             required: false,
             min: 2,
             max: 3,
+            custom_params: {param1: 'value1', param2: 'value2'},
             start_location: 42,
             show_tree: true,
             show_search: false,
@@ -94,7 +102,7 @@ Optional parameters
 
 * ``item_name``
 
-    Item name to render when you already have a value.
+    Item name to render when you already have a value
 
     **type**: ``string``
 
@@ -122,9 +130,15 @@ Optional parameters
 
     **type**: ``int``
 
+* ``custom_params``
+
+    The list of custom parameters to transfer to the backend
+
+    **type**: ``array``
+
 * ``start_location``
 
-    This option defines in which location the Content Browser will start.
+    This option defines in which location the Content Browser will start
 
     **type**: ``int``
 
