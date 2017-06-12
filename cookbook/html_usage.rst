@@ -71,7 +71,7 @@ via an ``include`` tag:
             required: false,
             min: 2,
             max: 3,
-            custom_params: {param1: 'value1', param2: 'value2'},
+            custom_params: {param1: 'value1', param2: ['value2', 'value3']},
             start_location: 42,
             show_tree: true,
             show_search: false,

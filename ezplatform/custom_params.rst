@@ -28,7 +28,7 @@ or in case of Twig template usage:
         with {
             input_id: 'my-location',
             item_type: 'ezlocation',
-            custom_params: {location_content_types: {'folder', 'category'}}
+            custom_params: {location_content_types: ['folder', 'category']}
         }
     %}
 
@@ -54,6 +54,6 @@ or in case of Twig template usage:
         with {
             input_id: 'my-location',
             item_type: 'ezlocation',
-            custom_params: {allowed_content_types: {'news', 'blog_post'}}
+            custom_params: {allowed_content_types: ['news', 'blog_post']}
         }
     %}
