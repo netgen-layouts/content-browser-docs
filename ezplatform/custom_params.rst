@@ -1,0 +1,59 @@
+Custom backend parameters
+=========================
+
+eZ location and eZ content backends support two custom parameters for now:
+
+* Overriding content types which will be shown in the tree
+* Overriding content types which will be selectable
+
+Overriding content types which will be shown in the tree
+~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+
+To override which content types will be used to build the location tree, use
+``location_content_types`` custom parameter, e.g.:
+
+.. code-block:: html
+
+    <div class="js-input-browse item-empty"
+        data-location_content_types="folder,category"
+    >
+        ...
+    </div>
+
+or in case of Twig template usage:
+
+.. code-block:: jinja
+
+    {% include 'NetgenContentBrowserBundle::content_browser.html.twig'
+        with {
+            input_id: 'my-location',
+            item_type: 'ezlocation',
+            custom_params: {location_content_types: {'folder', 'category'}}
+        }
+    %}
+
+Overriding content types which will be selectable
+~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+
+To override which content types will be selectable in the list of items, use
+``allowed_content_types`` custom parameter, e.g.:
+
+.. code-block:: html
+
+    <div class="js-input-browse item-empty"
+        data-allowed_content_types="news,blog_post"
+    >
+        ...
+    </div>
+
+or in case of Twig template usage:
+
+.. code-block:: jinja
+
+    {% include 'NetgenContentBrowserBundle::content_browser.html.twig'
+        with {
+            input_id: 'my-location',
+            item_type: 'ezlocation',
+            custom_params: {allowed_content_types: {'news', 'blog_post'}}
+        }
+    %}

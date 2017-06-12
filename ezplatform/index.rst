@@ -8,5 +8,6 @@ extend eZ Platform integration in content browser.
     :hidden:
 
     custom_preview_template
+    custom_params
 
 .. include:: /ezplatform/map.rst.inc
