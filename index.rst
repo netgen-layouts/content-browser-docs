@@ -14,7 +14,7 @@ Out of the box, Netgen Content Browser has the following plugins:
 
 * Selecting content and locations from `eZ Platform CMS`_
 * Selecting tags from `Netgen Tags Bundle`_ for eZ Platform
-* Selecting products from `Sylius eCommerce`_
+* Selecting products and taxons from `Sylius eCommerce`_
 
 .. note::
 
