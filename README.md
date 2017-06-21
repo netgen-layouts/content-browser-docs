@@ -30,5 +30,4 @@ If any of the following steps fail, rerun the commands with `sudo`.
     $ make html
     ```
 
-This will build the documentation and place the generated HTML files in
-`_build/html` directory.
+This will build the documentation and place the generated HTML files in `_build/html` directory.
