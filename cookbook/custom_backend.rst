@@ -103,30 +103,6 @@ will be injected in all templates (either when rendering a preview of an item or
 a single column), so make sure that it contains any data that you will need to
 render the templates.
 
-.. note:: **Differences from version 0.7**
-
-    In version 0.8 of Netgen Content Browser, some things changed in implementing
-    ``ItemInterface``. In version 0.7, ``isSelectable`` method was separate from
-    the ``ItemInterface``, so to support both version 0.7 and 0.8 and later of
-    Content Browser, implement both ``isSelectable`` method in ``ItemInterface``,
-    as well as a separate class implementing
-    ``Netgen\ContentBrowser\Item\Serializer\ItemSerializerHandlerInterface``
-    which has the same ``isSelectable`` method.
-
-    You also need to register the class in Symfony DIC with
-    ``netgen_content_browser.serializer.handler`` tag:
-
-    .. code-block:: yaml
-
-        app.content_browser.serializer.my_item_type:
-            class: AppBundle\ContentBrowser\Serializer\MyItemTypeSerializer
-            tags:
-                -  { name: netgen_content_browser.serializer.handler, item_type: my_item_type }
-
-    Once you migrate to version 0.8 of Content Browser, you can remove this
-    class and service definition and keep the ``isSelectable`` method in the
-    object implementing the ``ItemInterface``.
-
 Creating a preview template for the item
 ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
 
@@ -142,53 +118,6 @@ configuration:
 
 Creating this template is a simple task. The template receives the item in
 question in an ``item`` variable, which you can use to render the template.
-
-.. note:: **Differences from version 0.7**
-
-    In version 0.7 of Netgen Content Browser, a separate service was responsible
-    for providing values that would be injected to preview and column templates.
-    In version 0.8, things changed, and now a single variable named ``item`` is
-    injected by default, which holds your ``ItemInterface`` object.
-
-    To support both version 0.7 and 0.8 and later, create the following class:
-
-    .. code-block:: php
-
-        <?php
-
-        namespace AppBundle\ContentBrowser\TemplateValueProvider;
-
-        use Netgen\ContentBrowser\Item\ItemInterface;
-        use Netgen\ContentBrowser\Item\Renderer\TemplateValueProviderInterface;
-
-        class MyItemTypeTemplateValueProvider implements TemplateValueProviderInterface
-        {
-            /**
-             * Provides the values for template rendering.
-             *
-             * @param \Netgen\ContentBrowser\Item\ItemInterface $item
-             *
-             * @return array
-             */
-            public function getValues(ItemInterface $item)
-            {
-                return array(
-                    'item' => $item,
-                );
-            }
-        }
-
-    Then register the class in the Symfony DIC:
-
-    .. code-block:: yaml
-
-        app.content_browser.template_value_provider.my_item_type:
-            class: AppBundle\ContentBrowser\TemplateValueProvider\MyItemTypeTemplateValueProvider
-            tags:
-                - { name: netgen_content_browser.template_value_provider, item_type: my_item_type }
-
-    Once you migrate to version 0.8 of Content Browser, you can remove this
-    class and service definition.
 
 Implementing columns rendered via templates
 ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
