@@ -69,7 +69,7 @@ Available options
 
     **type**: ``int``, **required**: No, **default value**: ``null``
 
-* ``min``
+* ``max``
 
     This option defines how many items must at maximum be selected for dialog to
     be closed. Use ``null`` to disable the limit.
