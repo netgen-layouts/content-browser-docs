@@ -23,7 +23,7 @@ close the selection dialog.
 Set this to ``0`` to disable the limit. This configuration can be overriden when
 calling the dialog.
 
-**type**: ``int``, **required**: No, **default**: ``0``
+**type**: ``int``, **required**: No, **default**: ``1``
 
 ``max_selected``
 ~~~~~~~~~~~~~~~~
