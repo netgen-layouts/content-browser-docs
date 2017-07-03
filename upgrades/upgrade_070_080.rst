@@ -2,13 +2,13 @@ Upgrading from 0.7.0 to 0.8.0
 =============================
 
 Upgrade ``composer.json``
-~~~~~~~~~~~~~~~~~~~~~~~~~
+-------------------------
 
 In your ``composer.json`` file, upgrade the version of ``netgen/content-browser``
 package to ``~0.8.0`` and run the ``composer update`` command.
 
 Breaking changes
-~~~~~~~~~~~~~~~~
+----------------
 
 The following breaking changes were made in version ``0.8`` of Content Browser.
 Follow the instructions to upgrade your code to this newer version.

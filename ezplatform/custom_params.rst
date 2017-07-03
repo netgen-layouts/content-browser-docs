@@ -7,7 +7,7 @@ eZ location and eZ content backends support two custom parameters for now:
 * Overriding content types which will be selectable
 
 Overriding content types which will be shown in the tree
-~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+--------------------------------------------------------
 
 To override which content types will be used to build the location tree, use
 ``location_content_types`` custom parameter, e.g.:
@@ -33,7 +33,7 @@ or in case of Twig template usage:
     %}
 
 Overriding content types which will be selectable
-~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+-------------------------------------------------
 
 To override which content types will be selectable in the list of items, use
 ``allowed_content_types`` custom parameter, e.g.:

@@ -4,7 +4,7 @@ Available Symfony services
 A number of Symfony services is available for usage in your code:
 
 ``netgen_content_browser.registry.backend``
-~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+-------------------------------------------
 
 This service is a registry which holds all available backends. It is an
 implementation of ``Netgen\ContentBrowser\Registry\BackendRegistryInterface``
@@ -18,7 +18,7 @@ and you can use it to manually load Content Browser items by their ID.
     $item = $eZLocationBackend->loadItem(42);
 
 Configuration services
-~~~~~~~~~~~~~~~~~~~~~~
+----------------------
 
 Every backend has its own configuration service which can be used by the backend
 to access all config options specified in Symfony semantic config, as well as

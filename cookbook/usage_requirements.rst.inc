@@ -1,5 +1,5 @@
 Requirements
-~~~~~~~~~~~~
+------------
 
 Before you can use the Content Browser, you need to include its assets
 in your page head:

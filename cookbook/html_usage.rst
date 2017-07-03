@@ -7,7 +7,7 @@ a piece of specially crafted HTML.
 .. include:: usage_requirements.rst.inc
 
 Calling the Content Browser from your HTML
-~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+------------------------------------------
 
 Use the following piece of HTML code to call the Content Browser, and replace
 the relevant pieces of data to suit your needs (item type, CSS ID for the value
@@ -55,7 +55,7 @@ which will then hold the list of all custom parameters.
     </div>
 
 Calling the Content Browser from your Twig template
-~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+---------------------------------------------------
 
 Alternatively, you can just use a handy Twig template and set the wanted options
 via an ``include`` tag:
@@ -83,7 +83,7 @@ The following lists all available parameters that can be transferred to the
 template.
 
 Required parameters
-^^^^^^^^^^^^^^^^^^^
+~~~~~~~~~~~~~~~~~~~
 
 * ``input_id``
 
@@ -98,7 +98,7 @@ Required parameters
     **type**: ``string``
 
 Optional parameters
-^^^^^^^^^^^^^^^^^^^
+~~~~~~~~~~~~~~~~~~~
 
 * ``item_name``
 

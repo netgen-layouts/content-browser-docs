@@ -2,7 +2,7 @@ Installation instructions
 =========================
 
 Use Composer
-~~~~~~~~~~~~
+------------
 
 Run the following command to install Netgen Content Browser:
 
@@ -11,7 +11,7 @@ Run the following command to install Netgen Content Browser:
     $ composer require netgen/content-browser
 
 Activate the bundle
-~~~~~~~~~~~~~~~~~~~
+-------------------
 
 Activate the Content Browser in your kernel class together will all other
 required bundles:
@@ -31,7 +31,7 @@ required bundles:
     );
 
 Activate the routes
-~~~~~~~~~~~~~~~~~~~
+-------------------
 
 Add the following to your main ``routing.yml`` file to activate Content Browser
 routes:
@@ -43,7 +43,7 @@ routes:
         prefix: "%netgen_content_browser.route_prefix%"
 
 Install assets
-~~~~~~~~~~~~~~
+--------------
 
 Run the following from your repo root to install Content Browser assets:
 

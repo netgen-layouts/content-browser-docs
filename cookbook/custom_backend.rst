@@ -35,7 +35,7 @@ Implementing a backend involves the following:
   every column you add that's not using a template for rendering
 
 Configuring and enabling your new item type
-~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+-------------------------------------------
 
 Once you decide on your new item type identifier (in these examples, we will use
 ``my_item_type``), enabling it inside Content Browser is done with the following
@@ -61,7 +61,7 @@ For the list of all available configuration options, take a look at the
 :doc:`configuration reference </reference/configuration>`.
 
 Creating a Symfony service for the backend
-~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+------------------------------------------
 
 Every item type needs to have a Symfony service called backend. Backend's job is
 to hook into the CMS and return the data from the CMS needed to build locations
@@ -91,7 +91,7 @@ the item type by using ``netgen_content_browser.backend`` tag:
             -  { name: netgen_content_browser.backend, item_type: my_item_type }
 
 Creating ``ItemInterface`` and ``LocationInterface`` objects
-~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+------------------------------------------------------------
 
 As already mentioned, backend needs to return objects implementing
 ``Netgen\ContentBrowser\Item\LocationInterface`` and
@@ -104,7 +104,7 @@ a single column), so make sure that it contains any data that you will need to
 render the templates.
 
 Creating a preview template for the item
-~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+----------------------------------------
 
 As already mentioned, you can enable a preview of your items with the following
 configuration:
@@ -120,7 +120,7 @@ Creating this template is a simple task. The template receives the item in
 question in an ``item`` variable, which you can use to render the template.
 
 Implementing columns rendered via templates
-~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+-------------------------------------------
 
 Content Browser allows you to implement your custom columns by specifying a
 template that will be used to render the cell data in the column.
@@ -142,7 +142,7 @@ the template receives the item in question in an ``item`` variable, which you
 can use to render the template.
 
 Implementing columns rendered via column value providers
-~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+--------------------------------------------------------
 
 If rendering a column via Twig template is not suitable for you, you can use a
 separate Symfony service to render the cell data of a column.
