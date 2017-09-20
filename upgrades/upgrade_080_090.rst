@@ -16,3 +16,7 @@ Follow the instructions to upgrade your code to this newer version.
 * Many services that should not be used directly and are not part of public API
   are now marked as private in service container. Remove usage of those services
   in your code.
+
+* Most of the internal ``protected`` dependencies and methods were made
+  ``private``. Rather than extending internal classes, you need to use other
+  patterns when changing built in behaviour.
