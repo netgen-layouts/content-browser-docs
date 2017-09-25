@@ -20,5 +20,5 @@ Follow the instructions to upgrade your code to this newer version.
   be marked as such in a future update.
 
 * Most of the internal ``protected`` dependencies and methods were made
-  ``private``. Rather than extending internal classes, you need to use other
-  patterns when changing built in behaviour.
+  ``private`` and classes made final. Rather than extending internal classes,
+  you need to use other patterns when changing built in behaviour.
