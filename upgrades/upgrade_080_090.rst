@@ -22,3 +22,9 @@ Follow the instructions to upgrade your code to this newer version.
 * Most of the internal ``protected`` dependencies and methods were made
   ``private`` and classes made final. Rather than extending internal classes,
   you need to use other patterns when changing built in behaviour.
+
+* ``ezlocation`` and ``ezcontent`` backends have been merged to one backend that
+  handles both eZ location and content items. This means that eZ location and
+  eZ content specific items and column value providers have also been merged into
+  one. You need to adapt your code that uses them to use the new backend, item
+  and column value providers.
