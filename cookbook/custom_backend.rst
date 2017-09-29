@@ -45,17 +45,18 @@ used to render the item preview and a list of columns:
 .. code-block:: yaml
 
     netgen_content_browser:
-        my_item_type:
-            name: item_types.my_item_type # Will be translated with "ngcb" catalog
-            preview:
-                template: '@App/ngcb/my_item_type.html.twig'
-            columns:
-                # At least a "name" column must exist
-                name:
-                    name: columns.name # Will be translated with "ngcb" catalog
-                    value_provider: name # Using a built in "name" value provider
-            default_columns:
-                - name
+        item_types:
+            my_item_type:
+                name: item_types.my_item_type # Will be translated with "ngcb" catalog
+                preview:
+                    template: '@App/ngcb/my_item_type.html.twig'
+                columns:
+                    # At least a "name" column must exist
+                    name:
+                        name: columns.name # Will be translated with "ngcb" catalog
+                        value_provider: name # Using a built in "name" value provider
+                default_columns:
+                    - name
 
 For the list of all available configuration options, take a look at the
 :doc:`configuration reference </reference/configuration>`.
