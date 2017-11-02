@@ -10,5 +10,4 @@ package to ``~0.10.0`` and run the ``composer update`` command.
 Breaking changes
 ----------------
 
-The following breaking changes were made in version ``0.10`` of Content Browser.
-Follow the instructions to upgrade your code to this newer version.
+There were no breaking changes in version ``0.10`` of Content Browser.
