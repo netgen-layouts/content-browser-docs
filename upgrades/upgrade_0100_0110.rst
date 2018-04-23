@@ -1,0 +1,13 @@
+Upgrading from 0.10.0 to 0.11.0
+===============================
+
+Upgrade ``composer.json``
+-------------------------
+
+In your ``composer.json`` file, upgrade the version of ``netgen/content-browser``
+package to ``~0.11.0`` and run the ``composer update`` command.
+
+Breaking changes
+----------------
+
+There were no breaking changes in version ``0.11`` of Content Browser.
