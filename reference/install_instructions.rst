@@ -18,7 +18,7 @@ required bundles:
 
 .. code-block:: php
 
-    $bundles = array(
+    $bundles = [
         ...
 
         new WhiteOctober\PagerfantaBundle\WhiteOctoberPagerfantaBundle(),
@@ -28,7 +28,7 @@ required bundles:
         new Netgen\Bundle\ContentBrowserUIBundle\NetgenContentBrowserUIBundle(),
 
         new AppBundle\AppBundle(),
-    );
+    ];
 
 Activate the routes
 -------------------
