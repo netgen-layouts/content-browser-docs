@@ -23,7 +23,6 @@ required bundles:
 
         new WhiteOctober\PagerfantaBundle\WhiteOctoberPagerfantaBundle(),
         new Sensio\Bundle\FrameworkExtraBundle\SensioFrameworkExtraBundle(),
-        new Netgen\Bundle\CoreUIBundle\NetgenCoreUIBundle(),
         new Netgen\Bundle\ContentBrowserBundle\NetgenContentBrowserBundle(),
         new Netgen\Bundle\ContentBrowserUIBundle\NetgenContentBrowserUIBundle(),
 
