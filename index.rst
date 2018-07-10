@@ -68,7 +68,7 @@ which you can learn how to extend eZ Platform integration in content browser.
 
 .. include:: /ezplatform/map.rst.inc
 
-.. _`Quick Tour`: http://symfony.com/doc/current/quick_tour
+.. _`Quick Tour`: https://symfony.com/doc/current/quick_tour
 .. _`eZ Platform CMS`: https://ezplatform.com
 .. _`Netgen Tags Bundle`: https://github.com/netgen/tagsbundle
-.. _`Sylius eCommerce`: http://sylius.org
+.. _`Sylius eCommerce`: https://sylius.com
