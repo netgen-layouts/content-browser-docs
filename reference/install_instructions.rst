@@ -48,4 +48,4 @@ Run the following from your repo root to install Content Browser assets:
 
 .. code-block:: yaml
 
-    $ php app/console assets:install --symlink --relative
+    $ php bin/console assets:install --symlink --relative
