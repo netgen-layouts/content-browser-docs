@@ -18,6 +18,10 @@ Breaking changes
 * Form named ``item_id`` in ``ContentBrowserDynamicType`` has been renamed to
   ``item_value``. Update your code using this type to use the new name.
 
+* ``Netgen\ContentBrowser\Backend\BackendInterface::getDefaultSections`` method
+  has been renamed to ``getSections``. Update your custom backends to use the
+  new method name.
+
 * Block prefixes for Symfony forms have been renamed. The following table lists
   the old names and the new names. If you used custom form themes to change the
   look of Content Browser forms, update the Twig block names to use the new
