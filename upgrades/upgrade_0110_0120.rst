@@ -22,6 +22,10 @@ Breaking changes
   has been renamed to ``getSections``. Update your custom backends to use the
   new method name.
 
+* ``Netgen\ContentBrowser\Config\ConfigurationInterface`` has been removed.
+  Typehint against ``Netgen\ContentBrowser\Config\Configuration`` class directly
+  in your custom backends.
+
 * Block prefixes for Symfony forms have been renamed. The following table lists
   the old names and the new names. If you used custom form themes to change the
   look of Content Browser forms, update the Twig block names to use the new
