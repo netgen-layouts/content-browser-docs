@@ -1,11 +1,31 @@
+dist: trusty
+sudo: false
+
 language: python
 
 python: 2.7
 
-sudo: false
 cache:
-  directories: [$HOME/.cache/pip]
+  directories:
+    - $HOME/.cache/pip
+
+branches:
+  only:
+    - master
+    - /^\d.\d+$/
 
 install: pip install -r requirements.txt
 
 script: make SPHINXOPTS=-nW html
+
+notifications:
+  email: false
+  slack:
+    rooms:
+      - secure: "HgY0lpxSeLb24bw7e9TyDjUYG+LFvL3EeOrZi1ovG1sqQGv4qmsF8wHhTeo6bR6RCTupuGCBgpinVZ6LZDC40cRpWES7yxjF/9Ts2kWzbq8zil1M5iRvXJ3AjXRhGVgCPQL9BKB/3AsqpA4bl1SsKgNtdJiej+uanK4a34zZk3nVlUgmJX8pP64PbKRxRwUvNj2csZ/4M4pO5SNMq+xGLM9iLTTYkaM6LgvDpNNgQBhOU0iBaKpqrSJmUFVTUIzr2ENieMh57GFSZ9eWxu8GFi3UOEXlpgTGqlD7Rixu4eCrM2fRzmSqyWKIDZpsxvErqlRN2yWHA5oizGr6eJAZcm+owg/PvR3pI45ZtDQV7ZMUqqmYacLkurJSBd8pjma1Rh8pmDYTVoXqxeN921gxKILozOmYILWMkYbvUFB7SlFA7iNWiXLj1P55rjo4dlNJmomlanFuWF1z5Ok7UZx2C/7k+/1dtkVnDVCQLzgSLJ/sWS+ujiAI4QVRJksgQ1yzPHHLoIH6wNfx1Rxmef4fF8Jb01dxYYw2NI5bzo8f1Hsb0q6vMqMKijWP+nPCBpgwmredHriETwRnKBAHNzDOFqXkRMOcqkJZVoIARYG7G6c6KlLWTarhFG23Fvwqt5Go/IkJ4XRM9+vUoOQHlQQikP3eKaXqebfRta5xGmxHcIY="
+    on_success: change
+    on_failure: always
+    on_pull_requests: false
+
+git:
+  depth: 1
