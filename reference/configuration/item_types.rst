@@ -20,7 +20,7 @@ placeholder here, which will be translated with ``ngcb`` catalog.
 This is the number of items that needs to be selected at minimum to be able to
 close the selection dialog.
 
-Set this to ``0`` to disable the limit. This configuration can be overriden when
+Set this to ``0`` to disable the limit. This configuration can be overridden when
 calling the dialog.
 
 **type**: ``int``, **required**: No, **default**: ``1``
@@ -31,7 +31,7 @@ calling the dialog.
 This is the number of items that needs to be selected at maximum to be able to
 close the selection dialog.
 
-Set this to ``0`` to disable the limit. This configuration can be overriden when
+Set this to ``0`` to disable the limit. This configuration can be overridden when
 calling the dialog.
 
 **type**: ``int``, **required**: No, **default**: ``0``
@@ -52,7 +52,7 @@ together with all other configuration values described in this document.
 
 Controls if the tree panel will be displayed or not.
 
-This configuration can be overriden when calling the dialog.
+This configuration can be overridden when calling the dialog.
 
 **type**: ``bool``, **required**: No, **default**: ``true``
 
@@ -64,7 +64,7 @@ This configuration can be overriden when calling the dialog.
 
 Controls if the search panel will be displayed or not.
 
-This configuration can be overriden when calling the dialog.
+This configuration can be overridden when calling the dialog.
 
 **type**: ``bool``, **required**: No, **default**: ``true``
 
@@ -76,7 +76,7 @@ This configuration can be overriden when calling the dialog.
 
 Controls if the preview panel will be displayed or not.
 
-This configuration can be overriden when calling the dialog.
+This configuration can be overridden when calling the dialog.
 
 **type**: ``bool``, **required**: No, **default**: ``true``
 
