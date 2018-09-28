@@ -12,8 +12,12 @@ Breaking changes
 
 * Minimum required version of PHP is now 7.1
 
+* Scalar and return typehints have been added throughout the codebase. You
+  will need to update your custom code to match the typehints from Netgen
+  Content Browser.
+
 * ``Netgen\Bundle\CoreUIBundle\NetgenCoreUIBundle`` bundle has been removed.
-  Remove it from your ``AppKernel`` class.
+  Remove it from your kernel class.
 
 * Form named ``item_id`` in ``ContentBrowserDynamicType`` has been renamed to
   ``item_value``. Update your code using this type to use the new name.
