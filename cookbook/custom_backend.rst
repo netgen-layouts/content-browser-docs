@@ -75,9 +75,9 @@ locations and items. Most of these methods are straightforward. They either
 return a list of locations/items under specified location or with the specified
 name, or a single location/item with provided ID.
 
-``getDefaultSections`` method should return a list of ``LocationInterface``
-objects that will act as root locations of different sections of the location
-tree. For example, eZ specific backend would return three ``LocationInterface``
+``getSections`` method should return a list of ``LocationInterface`` objects
+that will act as root locations of different sections of the location tree.
+For example, eZ specific backend would return three ``LocationInterface``
 objects here, the one representing "Home" eZ location, the one representing
 "Media" eZ location and the one representing "Users" eZ location.
 
