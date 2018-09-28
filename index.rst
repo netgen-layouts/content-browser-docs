@@ -18,6 +18,15 @@ Out of the box, Netgen Content Browser has the following plugins:
 
 .. note::
 
+    These plugins have their own separate packages, so if you wish to use
+    Content Browser integrated into eZ Platform, install and activate
+    ``netgen/content-browser-ezplatform`` package.
+
+    If you wish to use Content Browser integrated into Sylius, install and
+    activate ``netgen/content-browser-sylius`` package.
+
+.. note::
+
     This documentation assumes you have a working knowledge of the Symfony
     Framework. If you're not familiar with Symfony, please start with
     reading the `Quick Tour`_ from the Symfony documentation.
