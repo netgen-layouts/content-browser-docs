@@ -1,0 +1,15 @@
+Upgrading from 0.12.0 to 0.13.0
+===============================
+
+Upgrade ``composer.json``
+-------------------------
+
+In your ``composer.json`` file, upgrade the version of ``netgen/content-browser``
+package and all other related packages (like ``netgen/content-browser-ui``,
+``netgen/content-browser-ezplatform`` and others) to ``~0.13.0`` and run the
+``composer update`` command.
+
+Breaking changes
+----------------
+
+There were no breaking changes in 0.13 version of Netgen Content Browser.
