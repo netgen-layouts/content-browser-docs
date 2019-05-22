@@ -50,7 +50,7 @@ which will then hold the list of all custom parameters.
             </a>
         </div>
 
-        <input type="hidden" class="js-config-name" value="MY_ITEM_TYPE" />
+        <input type="hidden" class="js-item-type" value="MY_ITEM_TYPE" />
         <input type="hidden" class="js-value" id="CSS_ID" value="" />
     </div>
 
