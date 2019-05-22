@@ -1,10 +1,8 @@
-Netgen Content Browser documentation
-====================================
+# Netgen Content Browser documentation
 
 This repository contains documentation for Netgen Content Browser. 
 
-Building the docs
------------------
+## Building the docs
 
 If any of the following steps fail, rerun the commands with `sudo`.
 
