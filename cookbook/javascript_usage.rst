@@ -48,7 +48,7 @@ Plugin accepts JavaScript object as options for that instance. For example:
         has_preview: false,
         max_selected: 4,
       },
-      rootPath: 'ezlocation',
+      itemType: 'ezlocation',
       onConfirm: function(selected) {
         // onConfirm function returns selected items
         console.log(selected);
@@ -65,7 +65,7 @@ Plugin accepts JavaScript object as options for that instance. For example:
 Required parameters for Content Browser config
 ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
 
-* ``rootPath``
+* ``itemType``
 
     Item type to select in the dialog.
 
