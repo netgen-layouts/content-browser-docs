@@ -5,22 +5,24 @@ Content Browser can be called at will anywhere from your JavaScript code.
 
 Installing the Content Browser plugin
 -------------------------------------
-Install the javascript module:
+
+Install the JavaScript module:
 
 .. code-block:: console
 
-    $ yarn add https://github.com/netgen-layouts/content-browser-ui#master
+    $ yarn add https://github.com/netgen-layouts/content-browser-ui#^1.0.0
 
 or
 
 .. code-block:: console
 
-    $ npm install https://github.com/netgen-layouts/content-browser-ui#master
-
+    $ npm install https://github.com/netgen-layouts/content-browser-ui#^1.0.0
 
 Usage
 -----
-To initialize Content Browser and use it in javascript on custom events you can use ``Browser`` plugin.
+
+To initialize Content Browser and use it in JavaScript on custom events you can
+use the ``Browser`` plugin.
 
 Import and initialize the plugin:
 
@@ -30,11 +32,11 @@ Import and initialize the plugin:
 
     // create new Content Browser instance
     const browser = new Browser(config);
+
     // open the browser
     browser.open();
 
-Plugin accepts javascript object as options for that instance.
-For example:
+Plugin accepts JavaScript object as options for that instance. For example:
 
 .. code-block:: javascript
 
@@ -55,37 +57,46 @@ For example:
         console.log('Browser closed');
       },
     });
+
     // open the browser
     browser.open();
 
 
-Required parameters for Content Browser config:
-~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+Required parameters for Content Browser config
+~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+
 * ``rootPath``
+
     Item type to select in the dialog.
 
     **type**: ``string``
 
-Optional parameters for Content Browser config:
-~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+Optional parameters for Content Browser config
+~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+
 * ``onCancel``
-    Function that is called after browser is closed without selecting items
+
+    Function that is called after browser is closed without selecting the items.
 
     **type**: ``function``
 
 * ``onConfirm``
-    Function that is called after selecting items and confirming in Content Browser.
 
-    Function returns array of selected items.
+    Function that is called after selecting the items and confirming in Content Browser.
+
+    Function returns an array of selected items.
 
     **type**: ``function``
 
 * ``disabledItems``
-    Array of item ids that should be disabled in Content Browser
+
+    Array of item IDs that should be disabled for selection in Content Browser.
 
     **type**: ``array``
 
 * ``overrides``
-    Object with overrides for config that you get from api after opening Content browser
+
+    Object with overrides for configuration initially specified via backend
+    REST API after opening Content Browser.
 
     **type**: ``object``
