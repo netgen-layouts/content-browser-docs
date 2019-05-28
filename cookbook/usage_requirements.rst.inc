@@ -7,8 +7,8 @@ in your page head:
 .. code-block:: html+jinja
 
     <meta name="ngcb-base-path" content="{{ path('ngcb_root') }}">
-    <link rel="stylesheet" href="{{ asset('netgen-content-browser.css', 'ngcb_css') }}">
-    <script src="{{ asset('netgen-content-browser.js', 'ngcb_js') }}"></script>
+    <link rel="stylesheet" href="{{ asset('main.css', 'ngcb_css') }}">
+    <script src="{{ asset('main.js', 'ngcb_js') }}"></script>
 
 or just include the provided Twig template:
 
@@ -17,13 +17,32 @@ or just include the provided Twig template:
     {% include '@NetgenContentBrowser/page_head.html.twig' %}
 
 All HTML code blocks which have ``js-input-browse`` or ``js-multiple-browse`` CSS class will be automatically initialized
-on document ready with jQuery and the plugin which are included in ``netgen-content-browser.js``.
+on window load with content browser js plugin.
 
 If you use another CSS class, or if you add content browser HTML code via AJAX to your page,
-you will need to manually initialize the plugin on those elements:
+you will need to manually initialize the plugin on those elements. In that case you don't have to include js assets
+in your page head but will need to install and import the plugin in your own javascript.
+
+Install the javascript module:
+
+.. code-block:: console
+
+    $ yarn add https://github.com/netgen-layouts/content-browser-ui#master
+
+or
+
+.. code-block:: console
+
+    $ npm install https://github.com/netgen-layouts/content-browser-ui#master
+
+Import and initialize content browser plugin:
 
 .. code-block:: javascript
 
-    // ngc_jquery variable holds jQuery included with Netgen Content Browser
-    ngc_jquery('.js-input-browse').input_browse(); // for single item select
-    ngc_jquery('.js-multiple-browse').multiple_browse(); // for multiple item select
+    import { InputBrowse, MultipleBrowse } from '@netgen/content-browser-ui';
+
+    // initialize single item select plugin
+    [...document.getElementsByClassName('js-input-browse')].forEach(el => new InputBrowse(el));
+
+    // initialize multiple item select plugin
+    [...document.getElementsByClassName('js-multiple-browse')].forEach(el => new MultipleBrowse(el));

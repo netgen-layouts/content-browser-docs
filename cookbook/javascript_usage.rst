@@ -100,3 +100,29 @@ Optional parameters for Content Browser config
     REST API after opening Content Browser.
 
     **type**: ``object``
+
+Using CSS
+---------
+You need to include CSS file for Content Browser to be displayed properly.
+Once you installed Content Browser plugin you can import styles in your scss file:
+
+.. code-block:: css
+
+    @import "@netgen/content-browser-ui/bundle/Resources/public/css/main";
+
+You also need to configure sass-loader to understand imports from node_modules:
+
+.. code-block:: javascript
+
+    {
+      loader: 'sass-loader',
+      options: {
+        includePaths: ['./node_modules']
+      }
+    }
+
+or import file path relative to your scss file:
+
+.. code-block:: css
+
+    @import "../node_modules/@netgen/content-browser-ui/bundle/Resources/public/css/main";
