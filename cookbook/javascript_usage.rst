@@ -103,14 +103,16 @@ Optional parameters for Content Browser config
 
 Using CSS
 ---------
-You need to include CSS file for Content Browser to be displayed properly.
-Once you installed Content Browser plugin you can import styles in your scss file:
+
+You need to include the CSS file for Content Browser for it to be displayed
+properly. You can import the styles in your SCSS file:
 
 .. code-block:: css
 
     @import "@netgen/content-browser-ui/bundle/Resources/public/css/main";
 
-You also need to configure sass-loader to understand imports from node_modules:
+You also need to configure ``sass-loader`` to understand imports from
+``node_modules`` directory:
 
 .. code-block:: javascript
 
@@ -121,7 +123,7 @@ You also need to configure sass-loader to understand imports from node_modules:
       }
     }
 
-or import file path relative to your scss file:
+or import the file with a path relative to your SCSS file:
 
 .. code-block:: css
 
