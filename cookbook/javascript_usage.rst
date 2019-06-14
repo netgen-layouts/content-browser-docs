@@ -6,17 +6,18 @@ Content Browser can be called at will anywhere from your JavaScript code.
 Installing the Content Browser plugin
 -------------------------------------
 
-Install the JavaScript module:
+Content Browser JavaScript module was preinstalled for you when you installed
+Content Browser via Composer. Activate it in your setup with:
 
 .. code-block:: console
 
-    $ yarn add https://github.com/netgen-layouts/content-browser-ui#^1.0.0
+    $ yarn add file:vendor/netgen/content-browser-ui
 
 or
 
 .. code-block:: console
 
-    $ npm install https://github.com/netgen-layouts/content-browser-ui#^1.0.0
+    $ npm install file:vendor/netgen/content-browser-ui
 
 Usage
 -----

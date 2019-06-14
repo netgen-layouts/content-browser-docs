@@ -26,17 +26,18 @@ elements. In that case, you don't have to include JavaScript assets in your
 page head. Instead, you will need to install Content Browser via Yarn/NPM and
 import the plugin in your own JavaScript code manually.
 
-Install the JavaScript module:
+Content Browser JavaScript module was preinstalled for you when you installed
+Content Browser via Composer. Activate it in your setup with:
 
 .. code-block:: console
 
-    $ yarn add https://github.com/netgen-layouts/content-browser-ui#^1.0.0
+    $ yarn add file:vendor/netgen/content-browser-ui
 
 or
 
 .. code-block:: console
 
-    $ npm install https://github.com/netgen-layouts/content-browser-ui#^1.0.0
+    $ npm install file:vendor/netgen/content-browser-ui
 
 Import and initialize the Content Browser plugin:
 
