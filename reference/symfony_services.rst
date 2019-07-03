@@ -6,9 +6,9 @@ A number of Symfony services is available for usage in your code:
 ``netgen_content_browser.registry.backend``
 -------------------------------------------
 
-This service is a registry which holds all available backends. It is an
-implementation of ``Netgen\ContentBrowser\Registry\BackendRegistryInterface``
-and you can use it to manually load Content Browser items by their ID.
+This service is a registry which holds all available backends. It is a class
+with ``Netgen\ContentBrowser\Registry\BackendRegistry`` type and you can use
+it to manually load Content Browser items by their ID.
 
 .. code-block:: php
 
