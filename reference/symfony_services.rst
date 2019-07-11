@@ -23,7 +23,7 @@ Configuration services
 Every backend has its own configuration service which can be used by the backend
 to access all config options specified in Symfony semantic config, as well as
 any custom parameters passed to the backend by the calling code. These services
-all implement ``Netgen\ContentBrowser\Config\ConfigurationInterface`` interface.
+are all instances of ``Netgen\ContentBrowser\Config\Configuration`` class.
 
 The names of these services are ``netgen_content_browser.config.ITEM_TYPE``. So
 for ``ezlocation`` item type, service name would be
