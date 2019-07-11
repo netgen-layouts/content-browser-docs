@@ -1,0 +1,80 @@
+Upgrading from 0.13.0 to 1.0.0
+==============================
+
+Upgrade ``composer.json``
+-------------------------
+
+In your ``composer.json`` file, upgrade the version of ``netgen/content-browser``
+package and all other related packages (like ``netgen/content-browser-ui``,
+``netgen/content-browser-ezplatform`` and others) to ``~1.0.0`` and run the
+``composer update`` command.
+
+Breaking changes
+----------------
+
+* Minimum supported version of PHP is now 7.2
+
+* Minimum supported version of Symfony is now 3.4.24 or 4.3
+
+* Interfaces for registries have been removed. Typehint against the concrete
+  registry implementations.
+
+* Names of the CSS and JavaScript assets have been changed:
+
+  Before:
+
+  .. code-block:: html+jinja
+
+      {{ asset('netgen-content-browser.css', 'ngcb_css') }}
+      {{ asset('netgen-content-browser.js', 'ngcb_js') }}
+
+  After:
+
+  .. code-block:: html+jinja
+
+      {{ asset('main.css', 'ngcb_css') }}
+      {{ asset('main.js', 'ngcb_js') }}
+
+* CSS class ``js-config-name`` in HTML markup has been renamed to
+  ``js-item-type``. If you have any custom code that calls the content browser
+  (e.g. overridden form type templates or code that calls the browser directly),
+  update the CSS class name to the new value.
+
+* Virtual services ``netgen_content_browser.current_backend`` and
+  ``netgen_content_browser.current_config`` have been renamed to
+  ``netgen_content_browser.backend`` and ``netgen_content_browser.config``
+  respectively.
+
+eZ Platform specific breaking changes
+-------------------------------------
+
+* Minimum supported version of eZ Platform is now 2.5 or 3.0
+
+* All container parameters that had ``ezpublish`` as part of their names have
+  been renamed to ``ezplatform`` instead.
+
+* Container parameters that allow specifying the item, preview and thumbnail
+  templates have been renamed to remove ``default_`` part of their name.
+
+  +-----------------------------------------------------------------+----------------------------------------------------------+
+  | Old name                                                        | New name                                                 |
+  +=================================================================+==========================================================+
+  | ``netgen_content_browser.ezpublish.default_item_template``      | ``netgen_content_browser.ezplatform.item_template``      |
+  +-----------------------------------------------------------------+----------------------------------------------------------+
+  | ``netgen_content_browser.ezpublish.default_preview_template``   | ``netgen_content_browser.ezplatform.preview_template``   |
+  +-----------------------------------------------------------------+----------------------------------------------------------+
+  | ``netgen_content_browser.ezpublish.default_thumbnail_template`` | ``netgen_content_browser.ezplatform.thumbnail_template`` |
+  +-----------------------------------------------------------------+----------------------------------------------------------+
+  | ``netgen_content_browser.eztags.default_item_template``         | ``netgen_content_browser.eztags.item_template``          |
+  +-----------------------------------------------------------------+----------------------------------------------------------+
+
+* All services that had ``EzPublish`` as part of their FQCN have been renamed
+  to ``EzPlatform`` instead.
+
+* All services that had ``ezpublish`` as part of their service name have been
+  renamed to ``ezplatform`` instead.
+
+* Identifiers of column value providers have been renamed from having the
+  ``ezpublish\`` prefix to having the ``ezplatform\`` prefix. This also includes
+  the related translations, which have been renamed from ``columns.ezpublish.``
+  prefix to ``columns.ezplatform.`` prefix.
