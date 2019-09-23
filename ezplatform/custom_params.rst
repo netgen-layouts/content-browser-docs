@@ -15,7 +15,7 @@ To override which content types will be used to build the location tree, use
 .. code-block:: html
 
     <div class="js-input-browse item-empty"
-        data-location_content_types="folder,category"
+        data-custom-location_content_types="folder,category"
     >
         ...
     </div>
@@ -41,7 +41,7 @@ To override which content types will be selectable in the list of items, use
 .. code-block:: html
 
     <div class="js-input-browse item-empty"
-        data-allowed_content_types="news,blog_post"
+        data-custom-allowed_content_types="news,blog_post"
     >
         ...
     </div>
