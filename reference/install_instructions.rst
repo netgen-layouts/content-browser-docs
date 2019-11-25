@@ -21,7 +21,6 @@ required bundles:
     $bundles = [
         ...
 
-        new WhiteOctober\PagerfantaBundle\WhiteOctoberPagerfantaBundle(),
         new Sensio\Bundle\FrameworkExtraBundle\SensioFrameworkExtraBundle(),
         new Netgen\Bundle\ContentBrowserBundle\NetgenContentBrowserBundle(),
         new Netgen\Bundle\ContentBrowserUIBundle\NetgenContentBrowserUIBundle(),
