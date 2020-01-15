@@ -34,7 +34,13 @@ Available options
 
     This option defines in which location the Content Browser will start.
 
-    **type**: ``int``, **required**: No, **default value**: ``null``
+    **type**: ``int|string``, **required**: No, **default value**: ``null``
+
+* ``custom_params``
+
+    This option is used to transfer any custom parameters to your backend.
+
+    **type**: ``array``, **required**: No, **default value**: ``[]``
 
 Other options
 ~~~~~~~~~~~~~
@@ -80,7 +86,13 @@ Available options
 
     This option defines in which location the Content Browser will start.
 
-    **type**: ``int``, **required**: No, **default value**: ``null``
+    **type**: ``int|string``, **required**: No, **default value**: ``null``
+
+* ``custom_params``
+
+    This option is used to transfer any custom parameters to your backend.
+
+    **type**: ``array``, **required**: No, **default value**: ``[]``
 
 Other options
 ~~~~~~~~~~~~~
@@ -117,4 +129,10 @@ Available options
 
     This option defines in which location the Content Browser will start.
 
-    **type**: ``int``, **required**: No, **default value**: ``null``
+    **type**: ``int|string``, **required**: No, **default value**: ``null``
+
+* ``custom_params``
+
+    This option is used to transfer any custom parameters to your backend.
+
+    **type**: ``array``, **required**: No, **default value**: ``[]``
