@@ -34,7 +34,7 @@ Available options
 
     This option defines in which location the Content Browser will start.
 
-    **type**: ``int``, **required**: No, **default value**: ``null``
+    **type**: ``int|string``, **required**: No, **default value**: ``null``
 
 Other options
 ~~~~~~~~~~~~~
@@ -80,7 +80,7 @@ Available options
 
     This option defines in which location the Content Browser will start.
 
-    **type**: ``int``, **required**: No, **default value**: ``null``
+    **type**: ``int|string``, **required**: No, **default value**: ``null``
 
 Other options
 ~~~~~~~~~~~~~
@@ -117,4 +117,4 @@ Available options
 
     This option defines in which location the Content Browser will start.
 
-    **type**: ``int``, **required**: No, **default value**: ``null``
+    **type**: ``int|string``, **required**: No, **default value**: ``null``
