@@ -22,7 +22,7 @@ To override which content types will be used to build the location tree, use
 
 or in case of Twig template usage:
 
-.. code-block:: jinja
+.. code-block:: twig
 
     {% include '@NetgenContentBrowser/content_browser.html.twig'
         with {
@@ -48,7 +48,7 @@ To override which content types will be selectable in the list of items, use
 
 or in case of Twig template usage:
 
-.. code-block:: jinja
+.. code-block:: twig
 
     {% include '@NetgenContentBrowser/content_browser.html.twig'
         with {

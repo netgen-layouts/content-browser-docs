@@ -4,7 +4,7 @@ Requirements
 Before you can use the Content Browser, you need to include its assets
 in your page head:
 
-.. code-block:: html+jinja
+.. code-block:: twig
 
     <meta name="ngcb-base-path" content="{{ path('ngcb_root') }}">
     <link rel="stylesheet" href="{{ asset('main.css', 'ngcb_css') }}">
@@ -12,7 +12,7 @@ in your page head:
 
 or just include the provided Twig template:
 
-.. code-block:: jinja
+.. code-block:: twig
 
     {% include '@NetgenContentBrowser/page_head.html.twig' %}
 

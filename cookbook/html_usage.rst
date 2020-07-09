@@ -60,7 +60,7 @@ Calling the Content Browser from your Twig template
 Alternatively, you can just use a handy Twig template and set the wanted options
 via an ``include`` tag:
 
-.. code-block:: jinja
+.. code-block:: twig
 
     {% include '@NetgenContentBrowser/content_browser.html.twig'
         with {

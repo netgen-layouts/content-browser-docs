@@ -23,14 +23,14 @@ Breaking changes
 
   Before:
 
-  .. code-block:: html+jinja
+  .. code-block:: twig
 
       {{ asset('netgen-content-browser.css', 'ngcb_css') }}
       {{ asset('netgen-content-browser.js', 'ngcb_js') }}
 
   After:
 
-  .. code-block:: html+jinja
+  .. code-block:: twig
 
       {{ asset('main.css', 'ngcb_css') }}
       {{ asset('main.js', 'ngcb_js') }}
