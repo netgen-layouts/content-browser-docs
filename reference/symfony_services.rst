@@ -12,8 +12,7 @@ it to manually load Content Browser items by their ID.
 
 .. code-block:: php
 
-    $backendRegistry = $this->get('netgen_content_browser.registry.backend');
-    $eZLocationBackend = $backendRegistry->getBackend('ezlocation');
+    $eZLocationBackend = $this->backendRegistry->getBackend('ezlocation');
 
     $item = $eZLocationBackend->loadItem(42);
 
