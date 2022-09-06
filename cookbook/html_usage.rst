@@ -62,8 +62,9 @@ via an ``include`` tag:
 
 .. code-block:: twig
 
-    {% include '@NetgenContentBrowser/content_browser.html.twig'
-        with {
+    {{ include(
+        '@NetgenContentBrowser/content_browser.html.twig',
+        {
             input_id: 'my-location',
             item_type: 'ezlocation',
             item_name: 'My item',
@@ -77,7 +78,7 @@ via an ``include`` tag:
             show_search: false,
             show_preview: true
         }
-    %}
+    ) }}
 
 The following lists all available parameters that can be transferred to the
 template.

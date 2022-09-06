@@ -24,13 +24,14 @@ or in case of Twig template usage:
 
 .. code-block:: twig
 
-    {% include '@NetgenContentBrowser/content_browser.html.twig'
-        with {
+    {{ include(
+        '@NetgenContentBrowser/content_browser.html.twig',
+        {
             input_id: 'my-location',
             item_type: 'ezlocation',
             custom_params: {location_content_types: ['folder', 'category']}
         }
-    %}
+    ) }}
 
 Overriding content types which will be selectable
 -------------------------------------------------
@@ -50,10 +51,11 @@ or in case of Twig template usage:
 
 .. code-block:: twig
 
-    {% include '@NetgenContentBrowser/content_browser.html.twig'
-        with {
+    {{ include(
+        '@NetgenContentBrowser/content_browser.html.twig',
+        {
             input_id: 'my-location',
             item_type: 'ezlocation',
             custom_params: {allowed_content_types: ['news', 'blog_post']}
         }
-    %}
+    ) }}

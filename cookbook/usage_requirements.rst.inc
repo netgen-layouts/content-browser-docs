@@ -14,7 +14,7 @@ or just include the provided Twig template:
 
 .. code-block:: twig
 
-    {% include '@NetgenContentBrowser/page_head.html.twig' %}
+    {{ include('@NetgenContentBrowser/page_head.html.twig') }}
 
 All HTML code blocks which have ``js-input-browse`` or ``js-multiple-browse``
 CSS class will be automatically initialized on window load with the included
