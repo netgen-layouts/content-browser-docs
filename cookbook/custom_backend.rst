@@ -131,12 +131,12 @@ column definition:
 
 .. code-block:: yaml
 
-	netgen_content_browser:
-		my_item_type:
-	        columns:
-	            column_one:
-	                name: columns.my_item_type.column_one
-	                template: '@App/ngcb/my_item_type/column_one.html.twig'
+    netgen_content_browser:
+        my_item_type:
+            columns:
+                column_one:
+                    name: columns.my_item_type.column_one
+                    template: '@App/ngcb/my_item_type/column_one.html.twig'
 
 Just as with a preview template, creating this template is a simple task. Again,
 the template receives the item in question in an ``item`` variable, which you
