@@ -91,6 +91,29 @@ the item type by using ``netgen_content_browser.backend`` tag:
         tags:
             -  { name: netgen_content_browser.backend, item_type: my_item_type }
 
+.. note:: yaml
+
+    If you are using autoconfiguration in your Symfony project on PHP 8.1, you
+    don't have to manually create a service configuration in your config.
+    Instead, you can use a PHP 8 attribute to mark the backend class as such:
+
+    .. code-block:: php
+
+        <?php
+
+        declare(strict_types=1);
+
+        namespace AppBundle\ContentBrowser\Backend;
+
+        use Netgen\ContentBrowser\Attribute\AsBackend;
+        use Netgen\ContentBrowser\Backend\BackendInterface;
+
+        #[AsBackend('my_item_type')]
+        final class MyItemTypeBackend implements BackendInterface
+        {
+            ...
+        }
+
 Creating ``ItemInterface`` and ``LocationInterface`` objects
 ------------------------------------------------------------
 
@@ -164,6 +187,30 @@ identifier to the tag:
         class: AppBundle\ContentBrowser\ColumnValueProvider\MyItemType\ColumnTwo
         tags:
             - { name: netgen_content_browser.column_value_provider, identifier: my_item_type\column_two }
+
+.. note:: yaml
+
+    If you are using autoconfiguration in your Symfony project on PHP 8.1, you
+    don't have to manually create a service configuration in your config.
+    Instead, you can use a PHP 8 attribute to mark the value provider class
+    as such:
+
+    .. code-block:: php
+
+        <?php
+
+        declare(strict_types=1);
+
+        namespace AppBundle\ContentBrowser\ColumnValueProvider\MyItemType;
+
+        use Netgen\ContentBrowser\Attribute\AsColumnValueProvider;
+        use Netgen\ContentBrowser\Item\ColumnProvider\ColumnValueProviderInterface;
+
+        #[AsColumnValueProvider('my_item_type\column_two')]
+        final class ColumnTwo implements ColumnValueProviderInterface
+        {
+            ...
+        }
 
 After that, you simply need to reference the identifier of the value provider in
 column definition:
