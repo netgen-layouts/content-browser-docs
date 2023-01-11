@@ -91,7 +91,7 @@ the item type by using ``netgen_content_browser.backend`` tag:
         tags:
             -  { name: netgen_content_browser.backend, item_type: my_item_type }
 
-.. note:: yaml
+.. note::
 
     If you are using autoconfiguration in your Symfony project on PHP 8.1, you
     don't have to manually create a service configuration in your config.
@@ -188,7 +188,7 @@ identifier to the tag:
         tags:
             - { name: netgen_content_browser.column_value_provider, identifier: my_item_type\column_two }
 
-.. note:: yaml
+.. note::
 
     If you are using autoconfiguration in your Symfony project on PHP 8.1, you
     don't have to manually create a service configuration in your config.
