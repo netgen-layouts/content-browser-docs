@@ -13,25 +13,23 @@ Run the following command to install Netgen Content Browser:
 Activate the bundle
 -------------------
 
-Activate the Content Browser in your kernel class together will all other
+Activate the Content Browser in your configuration together will all other
 required bundles:
 
 .. code-block:: php
 
-    $bundles = [
+    return [
         ...
 
-        new Sensio\Bundle\FrameworkExtraBundle\SensioFrameworkExtraBundle(),
-        new Netgen\Bundle\ContentBrowserBundle\NetgenContentBrowserBundle(),
-        new Netgen\Bundle\ContentBrowserUIBundle\NetgenContentBrowserUIBundle(),
-
-        new AppBundle\AppBundle(),
+        Sensio\Bundle\FrameworkExtraBundle\SensioFrameworkExtraBundle::class => ['all' => true],
+        Netgen\Bundle\ContentBrowserUIBundle\NetgenContentBrowserUIBundle::class => ['all' => true],
+        Netgen\Bundle\ContentBrowserBundle\NetgenContentBrowserBundle::class => ['all' => true],
     ];
 
 Activate the routes
 -------------------
 
-Add the following to your main routing file to activate Content Browser routes:
+Add the following to your routing config to activate Content Browser routes:
 
 .. code-block:: yaml
 
