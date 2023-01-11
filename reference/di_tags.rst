@@ -19,7 +19,7 @@ the tag to specify the item type the backend is used for:
 .. code-block:: yaml
 
     app.content_browser.my_backend:
-        class: AppBundle\ContentBrowser\MyBackend
+        class: App\ContentBrowser\MyBackend
         tags:
             - { name: netgen_content_browser.backend, item_type: my_backend }
 
@@ -40,6 +40,6 @@ attribute in the tag to attach a unique identifier to the provider:
 .. code-block:: yaml
 
     app.content_browser.my_item.custom_column:
-        class: AppBundle\ContentBrowser\MyItem\CustomColumn
+        class: App\ContentBrowser\MyItem\CustomColumn
         tags:
             - { name: netgen_content_browser.column_value_provider, identifier: my_item\custom_column }

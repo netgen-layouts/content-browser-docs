@@ -29,7 +29,7 @@ Follow the instructions to upgrade your code to this newer version.
 
       <?php
 
-      namespace AppBundle\ContentBrowser\Item\Serializer\Handler;
+      namespace App\ContentBrowser\Item\Serializer\Handler;
 
       use Netgen\ContentBrowser\Item\ItemInterface;
       use Netgen\ContentBrowser\Item\Serializer\ItemSerializerHandlerInterface;
@@ -55,7 +55,7 @@ Follow the instructions to upgrade your code to this newer version.
 
       <?php
 
-      namespace AppBundle\ContentBrowser\Item\MyItem;
+      namespace App\ContentBrowser\Item\MyItem;
 
       use Netgen\ContentBrowser\Item\ItemInterface;
 
@@ -85,7 +85,7 @@ Follow the instructions to upgrade your code to this newer version.
 
       <?php
 
-      namespace AppBundle\ContentBrowser\Item\Renderer\TemplateValueProvider;
+      namespace App\ContentBrowser\Item\Renderer\TemplateValueProvider;
 
       use Netgen\ContentBrowser\Item\ItemInterface;
       use Netgen\ContentBrowser\Item\Renderer\TemplateValueProviderInterface;
@@ -117,7 +117,7 @@ Follow the instructions to upgrade your code to this newer version.
 
       <?php
 
-      namespace AppBundle\ContentBrowser\Item\MyItem;
+      namespace App\ContentBrowser\Item\MyItem;
 
       use Netgen\ContentBrowser\Item\ItemInterface;
 

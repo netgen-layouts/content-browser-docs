@@ -87,7 +87,7 @@ the item type by using ``netgen_content_browser.backend`` tag:
 .. code-block:: yaml
 
     app.content_browser.backend.my_item_type:
-        class: AppBundle\ContentBrowser\Backend\MyItemTypeBackend
+        class: App\ContentBrowser\Backend\MyItemTypeBackend
         tags:
             -  { name: netgen_content_browser.backend, item_type: my_item_type }
 
@@ -103,7 +103,7 @@ the item type by using ``netgen_content_browser.backend`` tag:
 
         declare(strict_types=1);
 
-        namespace AppBundle\ContentBrowser\Backend;
+        namespace App\ContentBrowser\Backend;
 
         use Netgen\ContentBrowser\Attribute\AsBackend;
         use Netgen\ContentBrowser\Backend\BackendInterface;
@@ -184,7 +184,7 @@ identifier to the tag:
 .. code-block:: yaml
 
     app.content_browser.template_value_provider.my_item_type.column_two:
-        class: AppBundle\ContentBrowser\ColumnValueProvider\MyItemType\ColumnTwo
+        class: App\ContentBrowser\ColumnValueProvider\MyItemType\ColumnTwo
         tags:
             - { name: netgen_content_browser.column_value_provider, identifier: my_item_type\column_two }
 
@@ -201,7 +201,7 @@ identifier to the tag:
 
         declare(strict_types=1);
 
-        namespace AppBundle\ContentBrowser\ColumnValueProvider\MyItemType;
+        namespace App\ContentBrowser\ColumnValueProvider\MyItemType;
 
         use Netgen\ContentBrowser\Attribute\AsColumnValueProvider;
         use Netgen\ContentBrowser\Item\ColumnProvider\ColumnValueProviderInterface;
