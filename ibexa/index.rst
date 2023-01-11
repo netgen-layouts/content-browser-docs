@@ -1,8 +1,8 @@
-eZ Platform integration
-=======================
+Ibexa CMS integration
+=====================
 
 This section provides a handful of recipes with which you can learn how to
-extend eZ Platform integration in content browser.
+extend Ibexa CMS integration in Content Browser.
 
 .. toctree::
     :hidden:
@@ -10,4 +10,4 @@ extend eZ Platform integration in content browser.
     custom_preview_template
     custom_params
 
-.. include:: /ezplatform/map.rst.inc
+.. include:: /ibexa/map.rst.inc

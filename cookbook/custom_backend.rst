@@ -12,7 +12,7 @@ of items are identified by their string identifier and every backend needs to
 work with and return only one item type.
 
 When implementing a backend and all its required services, it is left up to you
-to define whether some locations can also be items, (like in eZ Platform, where
+to define whether some locations can also be items, (like in Ibexa CMS, where
 all locations in a tree are selectable), or not (like in Sylius, where locations
 are built from Sylius taxons and are not selectable), or some other combination
 (like in Netgen Tags, where the root location is a virtual one and thus not
@@ -77,9 +77,9 @@ name, or a single location/item with provided ID.
 
 ``getSections`` method should return a list of ``LocationInterface`` objects
 that will act as root locations of different sections of the location tree.
-For example, eZ specific backend would return three ``LocationInterface``
-objects here, the one representing "Home" eZ location, the one representing
-"Media" eZ location and the one representing "Users" eZ location.
+For example, Ibexa specific backend would return three ``LocationInterface``
+objects here, the one representing "Home" Ibexa location, the one representing
+"Media" Ibexa location and the one representing "Users" Ibexa location.
 
 Once implemented, backend needs to be registered in Symfony DIC and connected to
 the item type by using ``netgen_content_browser.backend`` tag:

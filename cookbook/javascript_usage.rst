@@ -49,7 +49,7 @@ Plugin accepts JavaScript object as options for that instance. For example:
         has_preview: false,
         max_selected: 4,
       },
-      itemType: 'ezlocation',
+      itemType: 'ibexa_location',
       onConfirm: function(selected) {
         // onConfirm function returns selected items
         console.log(selected);

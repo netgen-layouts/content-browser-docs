@@ -66,7 +66,7 @@ via an ``include`` tag:
         '@NetgenContentBrowser/content_browser.html.twig',
         {
             input_id: 'my-location',
-            item_type: 'ezlocation',
+            item_type: 'ibexa_location',
             item_name: 'My item',
             no_item_message: 'No item selected',
             required: false,

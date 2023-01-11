@@ -12,9 +12,9 @@ it to manually load Content Browser items by their ID.
 
 .. code-block:: php
 
-    $eZLocationBackend = $this->backendRegistry->getBackend('ezlocation');
+    $ibexaLocationBackend = $this->backendRegistry->getBackend('ibexa_location');
 
-    $item = $eZLocationBackend->loadItem(42);
+    $item = $ibexaLocationBackend->loadItem(42);
 
 Configuration services
 ----------------------
@@ -25,5 +25,5 @@ any custom parameters passed to the backend by the calling code. These services
 are all instances of ``Netgen\ContentBrowser\Config\Configuration`` class.
 
 The names of these services are ``netgen_content_browser.config.ITEM_TYPE``. So
-for ``ezlocation`` item type, service name would be
-``netgen_content_browser.config.ezlocation``.
+for ``ibexa_location`` item type, service name would be
+``netgen_content_browser.config.ibexa_location``.

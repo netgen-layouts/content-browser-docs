@@ -9,13 +9,13 @@ The process involves adding a bit of configuration to enable the column:
 .. code-block:: yaml
 
     netgen_content_browser:
-        ezlocation:
+        ibexa_location:
             columns:
                 my_column:
-                    name: columns.ezlocation.my_column
+                    name: columns.ibexa_location.my_column
                     # Either specify a template or a value provider identifier
-                    template: '@App/ngcb/ezlocation/my_column.html.twig'
-                    # value_provider: ezlocation\my_column
+                    template: '@App/ngcb/ibexa_location/my_column.html.twig'
+                    # value_provider: ibexa_location\my_column
 
 And then you need to either create a template that will render the cell of the
 column, or create and register a Symfony service that does the same. For more

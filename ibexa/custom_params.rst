@@ -1,7 +1,7 @@
 Custom backend parameters
 =========================
 
-eZ location and eZ content backends support two custom parameters for now:
+Ibexa location and Ibexa content backends support two custom parameters for now:
 
 * Overriding content types which will be shown in the tree
 * Overriding content types which will be selectable
@@ -28,7 +28,7 @@ or in case of Twig template usage:
         '@NetgenContentBrowser/content_browser.html.twig',
         {
             input_id: 'my-location',
-            item_type: 'ezlocation',
+            item_type: 'ibexa_location',
             custom_params: {location_content_types: ['folder', 'category']}
         }
     ) }}
@@ -55,7 +55,7 @@ or in case of Twig template usage:
         '@NetgenContentBrowser/content_browser.html.twig',
         {
             input_id: 'my-location',
-            item_type: 'ezlocation',
+            item_type: 'ibexa_location',
             custom_params: {allowed_content_types: ['news', 'blog_post']}
         }
     ) }}

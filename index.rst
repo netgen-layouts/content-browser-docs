@@ -12,15 +12,15 @@ will be added to block collections.
 
 Out of the box, Netgen Content Browser has the following plugins:
 
-* Selecting content and locations from `eZ Platform CMS`_
-* Selecting tags from `Netgen Tags Bundle`_ for eZ Platform
+* Selecting content and locations from `Ibexa CMS`_
+* Selecting tags from `Netgen Tags Bundle`_ for Ibexa CMS
 * Selecting products and taxons from `Sylius eCommerce`_
 
 .. note::
 
     These plugins have their own separate packages, so if you wish to use
-    Content Browser integrated into eZ Platform, install and activate
-    ``netgen/content-browser-ezplatform`` package.
+    Content Browser integrated into Ibexa CMS, install and activate
+    ``netgen/content-browser-ibexa`` package.
 
     If you wish to use Content Browser integrated into Sylius, install and
     activate ``netgen/content-browser-sylius`` package.
@@ -64,20 +64,20 @@ which you can learn how to extend and use Netgen Content Browser.
 
 .. include:: /cookbook/map.rst.inc
 
-eZ Platform integration
------------------------
+Ibexa CMS integration
+---------------------
 
-:doc:`This section </ezplatform/index>` provides a handful of recipes with
-which you can learn how to extend eZ Platform integration in content browser.
+:doc:`This section </ibexa/index>` provides a handful of recipes with
+which you can learn how to extend Ibexa CMS integration in Content Browser.
 
 .. toctree::
     :hidden:
 
-    ezplatform/index
+    ibexa/index
 
-.. include:: /ezplatform/map.rst.inc
+.. include:: /ibexa/map.rst.inc
 
 .. _`Quick Tour`: https://symfony.com/doc/current/quick_tour
-.. _`eZ Platform CMS`: https://ezplatform.com
+.. _`Ibexa CMS`: https://ibexa.co
 .. _`Netgen Tags Bundle`: https://github.com/netgen/tagsbundle
 .. _`Sylius eCommerce`: https://sylius.com
