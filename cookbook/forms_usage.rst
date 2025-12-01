@@ -20,6 +20,7 @@ Form type class
 ~~~~~~~~~~~~~~~
 
 ``Netgen\ContentBrowser\Form\Type\ContentBrowserType``
+``Netgen\ContentBrowser\Form\Type\ContentBrowserIntegerType``
 
 Available options
 ~~~~~~~~~~~~~~~~~
@@ -45,8 +46,11 @@ Available options
 Other options
 ~~~~~~~~~~~~~
 
-Parent of this type is the Symfony ``TextType`` type, so any options available
-in that type can be used in this type too.
+If using ``ContentBrowserType`` parent of this type will be Symfony ``TextType``
+type, so any options available in that type can be used in this type too. Also,
+in this case, the value returned by the Symfony form will be a string. If you
+need an integer, you can use ``ContentBrowserIntegerType``, which will use
+Symfony's ``IntegerType`` as the parent.
 
 Multiple content browser type
 -----------------------------
@@ -58,6 +62,7 @@ Form type class
 ~~~~~~~~~~~~~~~
 
 ``Netgen\ContentBrowser\Form\Type\ContentBrowserMultipleType``
+``Netgen\ContentBrowser\Form\Type\ContentBrowserMultipleIntegerType``
 
 Available options
 ~~~~~~~~~~~~~~~~~
@@ -99,6 +104,9 @@ Other options
 
 Parent of this type is the Symfony ``CollectionType`` type, so any options
 available in that type can be used in this type too.
+
+The values returned by the Symfony form will be strings. If you need integers,
+you can use ``ContentBrowserMultipleIntegerType``.
 
 Dynamic content browser type
 ----------------------------

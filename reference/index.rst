@@ -8,5 +8,6 @@ Reference
     configuration
     symfony_services
     di_tags
+    di_attributes
 
 .. include:: /reference/map.rst.inc

@@ -2,3 +2,4 @@
 * :doc:`/reference/configuration`
 * :doc:`/reference/symfony_services`
 * :doc:`/reference/di_tags`
+* :doc:`/reference/di_attributes`
